@@ -6,6 +6,9 @@
 
     <mvc:annotation-driven/>
     <context:component-scan base-package="controller"/>
+    <!-- html resource(css, js...) mapping    -->
+    <mvc:resources mapping="/resources/**" location="WEB-INF/resources/Login_v14"/>
+
     <!--jsp파일 가져와서 응답을 전송    -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/views/"/>
