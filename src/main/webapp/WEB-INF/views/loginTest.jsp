@@ -12,8 +12,9 @@
 </head>
 <body>
     Login Test
-    ID : <br>
-    email : <br/>
-    password : <br>
+
+    ID : ${loginInfo.userId}<br>
+    email : ${loginInfo.userEmail}<br/>
+    password : ${loginInfo.userPassword}<br>
 </body>
 </html>
