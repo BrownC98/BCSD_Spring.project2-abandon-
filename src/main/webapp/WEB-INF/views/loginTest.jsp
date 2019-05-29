@@ -11,10 +11,10 @@
     <title>Login Test</title>
 </head>
 <body>
-    Login Test
-
-    ID : ${loginInfo.userId}<br>
+    Login Test <br/>
+    안녕하세요 ${loginInfo.userEmail}님<br/>
+    ID : ${loginInfo.userId}<br/>
     email : ${loginInfo.userEmail}<br/>
-    password : ${loginInfo.userPassword}<br>
+    password : ${loginInfo.userPassword}<br/>
 </body>
 </html>
