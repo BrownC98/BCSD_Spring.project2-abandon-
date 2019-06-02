@@ -5,9 +5,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <mvc:annotation-driven/>
-    <context:component-scan base-package="controller"/>
+    <context:component-scan base-package="project"/>
+
     <!-- html resource(css, js...) mapping    -->
-    <mvc:resources mapping="/resources/**" location="WEB-INF/resources/Login_v14"/>
+    <mvc:resources mapping="/resources/**" location="WEB-INF/resources/"/>
 
     <!--jsp파일 가져와서 응답을 전송    -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

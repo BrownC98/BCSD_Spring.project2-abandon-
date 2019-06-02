@@ -1,4 +1,4 @@
-package domain;
+package project.domain;
 
 public class UserVO {
     // DB에선 userID, email, password임

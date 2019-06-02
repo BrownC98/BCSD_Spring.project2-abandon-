@@ -5,7 +5,7 @@
 <html lang="en">
 <%@ page contentType="text/html;charset=utf-8" %>
 <head>
-    <title>Login</title>
+    <title>Register</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
@@ -38,9 +38,9 @@
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
-            <form class="login100-form validate-form flex-sb flex-w" action="<c:url value="/login"/>" method="post">
+            <form class="login100-form validate-form flex-sb flex-w" action="<c:url value="/register"/>" method="post">
 					<span class="login100-form-title p-b-32">
-						WEB CALENDER Account Login
+						회    원    가    입
 					</span>
 
                 <span class="txt1 p-b-11">
@@ -50,7 +50,6 @@
                     <input class="input100" type="text" name="userEmail">
                     <span class="focus-input100"></span>
                 </div>
-
                 <span class="txt1 p-b-11">
 						Password
 					</span>
@@ -61,37 +60,9 @@
                     <input class="input100" type="password" name="userPassword">
                     <span class="focus-input100"></span>
                 </div>
-
-                <div class="flex-sb-m w-full p-b-48" style="padding-bottom: 10px">
-                    <div class="contact100-form-checkbox">
-                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-                        <label class="label-checkbox100" for="ckb1">
-                            Remember me
-                        </label>
-
-                    </div>
-
-                    <div>
-                        <a href="<c:url value="/forgot"/>" class="txt3">
-                            Forgot Password?
-                        </a>
-
-                    </div>
-                    <span>
-                        <a href="<c:url value="/register"/>" class="txt3">
-                            Register
-                        </a>
-                    </span>
-                </div>
-                <c:if test="${wrong}">
-                    <div style="color: #c82b2d; padding-bottom: 10px">
-                        아이디 또는 비밀번호를 다시 확인하세요.<br/>
-                        등록되지 않은 아이디이거나, 아이디 또는 비밀번호를 잘못 입력하셨습니다.
-                    </div>
-                </c:if>
                 <div class="container-login100-form-btn">
                     <button class="login100-form-btn" type="submit">
-                        Login
+                        Register
                     </button>
                 </div>
             </form>
@@ -118,6 +89,13 @@
 <script src="../resources/Login_v14/vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 <script src="../resources/Login_v14/js/main.js"></script>
-
+<%--<script>--%>
+<%--    var msg = "${msg}";--%>
+<%--    if(msg === "가입완료"){--%>
+<%--        alert("회원가입이 완료되었습니다.");--%>
+<%--    } else {--%>
+<%--        alert("아이디와 비밀번호를 확인해주세요");--%>
+<%--    }--%>
+<%--</script>--%>
 </body>
 </html>
